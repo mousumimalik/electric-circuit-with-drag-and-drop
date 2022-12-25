@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Drag & Drop</title>
+</head>
+<body>
+
+  <button id="refresh" onClick="window.location.reload()">Refresh</button>
+
+
+  <div class="circuit-container droppable" id="line">
+      <div class="bulb">
+          <i class="fas fa-lightbulb light"></i>
+      </div>
+      <div class="swittch">
+          <i onclick="switched(this)" class="fas fa-random" id="switch"></i>
+      </div>
+      <div class="battery">
+          <i class="fas fa-car-battery"></i>
+      </div>
+      <div class="arrow angle-down">
+          <i class="fas fa-long-arrow-alt-down"></i>
+      </div>
+      <div class="arrow angle-right"></div>
+      <div class="arrow angle-right1"></div>
+      <div class="arrow angle-left"></div>
+      <div class="arrow angle-left1"></div>
+
+      <div class="stripped-wire"></div>
+  </div>
+    
+
+    <!-- <img src="./south_north.jpg" id="compas"> -->
+
+    <!-- <div class="compass" id="compas">
+        <div class="compass-inner">
+            <div class="north">N</div>
+            <div class="east">E</div>
+            <div class="west">W</div>
+            <div class="south">S</div>
+            <div class="main-arrow" id="arrows">
+                <div class="arrow-up"></div>
+                <div class="arrow-down"></div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="compass" id="compas">
+        <div class="compass-inner">
+            <div class="north">N</div>
+            <div class="east">E</div>
+            <div class="west">W</div>
+            <div class="south">S</div>
+            <div class="main-arrow" id="arrows">
+                <i class="fas fa-arrows-alt-v" id="arrow_v"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
